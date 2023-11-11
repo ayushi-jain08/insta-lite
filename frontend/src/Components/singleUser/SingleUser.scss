@@ -1,0 +1,142 @@
+.single-user {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 320px 1fr 350px;
+  height: 1000px;
+  max-width: 99%;
+  margin: 10px auto;
+
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: wheat;
+    width: 10px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: orangered;
+    border-radius: 20px;
+    border: 3px solid orange;
+  }
+
+  .left {
+    overflow-y: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 5px 10px;
+    height: 100%;
+    width: 100%;
+
+    .left-bottom {
+      width: 100%;
+      margin-top: 20px;
+      // height: 400px;
+      overflow: hidden;
+      overflow-y: auto;
+
+      &::-webkit-scrollbar {
+        width: 8px;
+      }
+      &::-webkit-scrollbar-track {
+        background: wheat;
+        width: 10px;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background-color: orangered;
+        border-radius: 20px;
+        border: 3px solid orange;
+      }
+    }
+  }
+  .center {
+    overflow-y: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 5px 15px;
+    gap: 10px;
+    overflow: hidden;
+    width: 100%;
+
+    .center-bottom {
+      box-sizing: border-box;
+      padding: 5px;
+
+      height: 650px;
+      overflow-x: hidden;
+      overflow-y: auto;
+      scroll-behavior: smooth;
+
+      &::-webkit-scrollbar {
+        width: 8px;
+      }
+
+      &::-webkit-scrollbar-track {
+        background: wheat;
+        width: 10px;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background-color: orangered;
+        border-radius: 20px;
+        border: 3px solid orange;
+      }
+    }
+  }
+  .right {
+    box-sizing: border-box;
+    padding: 1rem;
+    overflow-y: auto;
+
+    .pagination {
+      margin-top: 20px;
+      float: right;
+      background: rgb(193, 193, 252);
+      padding: 5px;
+      border-radius: 10px;
+
+      button {
+        padding: 3px 10px;
+        font-size: 13px;
+        font-weight: 600;
+        margin-left: 5px;
+        background: white;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+
+        &.active {
+          background-color: orangered;
+          color: white;
+        }
+      }
+    }
+    .all-user {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 20px;
+    }
+
+    &::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: wheat;
+      width: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: orangered;
+      border-radius: 20px;
+      border: 3px solid orange;
+    }
+  }
+}

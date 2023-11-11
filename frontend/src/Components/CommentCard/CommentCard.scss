@@ -1,0 +1,57 @@
+.comment-card {
+  margin-top: 20px;
+  color: rgba(0, 0, 0, 0.507);
+  padding: 5px 10px;
+ display: flex;
+  border-radius: 30px;
+  align-items: baseline;
+  justify-content: space-between;
+
+  &:hover {
+    background: whitesmoke;
+  }
+  .sub-card{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 2px solid orangered;
+      
+    }
+    p{
+        font-size: 19px;
+        font-weight: 600;
+    }
+    h5{
+        font-size: 17px;
+        font-weight: 300;
+        color: black;
+    }
+  }
+  .delete-btn{
+    
+    border: none;
+    outline: none;
+    background: transparent;
+    color: red;
+    
+    svg{
+        border: none;
+        outline: none;
+        background: transparent;
+        color: red;
+        font-size: 25px;
+        transition: all 0.3s ease;
+
+        &:active{
+            transform: scale(1.3);
+            color: orangered;
+        }
+    }
+    }
+  
+}

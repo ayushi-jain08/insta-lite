@@ -1,0 +1,41 @@
+.conv-users{
+    height: 90vh;
+   
+    .active{
+        background: rgb(249, 125, 125);
+        color: white;
+    }
+.conversation{
+    display: flex;
+    gap: 5px;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 15px;
+    padding: 6px 5px;
+    overflow-x: hidden;
+   border-bottom-left-radius: 10px;
+   border-top-left-radius: 10px;
+   cursor: pointer;
+ 
+    &:hover{
+        background: rgb(214, 234, 252);
+        color: black;
+    }
+    img{
+        border-radius: 50%;
+        width: 45px;
+        height: 45px;
+        border:2px solid orangered;
+    }
+    .users{
+        h2{
+            font-size: 16px;
+            text-transform: capitalize;
+        }
+        p{
+            font-size: 13px;
+            font-style: italic;
+        }
+    }
+}
+}

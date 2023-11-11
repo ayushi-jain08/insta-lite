@@ -1,0 +1,125 @@
+
+.login{
+    /*
+* Created with https://www.css-gradient.com
+* Gradient link: https://www.css-gradient.com/?c1=caf6bc&c2=f9d3a7&gt=l&gd=dtl
+*/
+background: #CAF6BC;
+background: linear-gradient(135deg, #CAF6BC, #F9D3A7);
+    height: 100vh;
+    padding: 20px;
+    overflow: hidden;
+
+.login-container {
+  max-width: 320px;
+  margin: 30px auto;
+  outline-color: #e8e8e8;
+  border-radius: 10px;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  height: 450px;
+  padding: 15px;
+  border: 1px solid rgb(223, 222, 222);
+  background: rgb(241, 240, 240);
+
+  .profile {
+    width: 130px;
+    height: 130px;
+    background: #edf2f6;
+    box-shadow: inset 10px 10px 10px -1px rgb(10, 99, 169, 0.16),
+      inset -10px -10px 10px -1px rgb(255, 255, 255, 0.7);
+    border-radius: 50%;
+    margin: 5px auto;
+    border: 5px solid orangered;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  h2 {
+    color: rgb(14, 14, 72);
+    text-align: center;
+    letter-spacing: 1px;
+    font-weight: 700;
+    font-size: 35px;
+    margin-bottom: 10px;
+  }
+
+  .form-group {
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    border: none;
+    outline: none;
+    border: none;
+    padding: 0.7rem;
+    border-radius: 1rem;
+    background: white;
+    box-shadow: 10px 10px 10px -1px rgb(10, 99, 169, 0.16),
+      -10px -10px 10px -1px rgb(255, 255, 255, 0.3);
+    transition: 0.3s;
+    width: 270px;
+  margin-left: 15px;
+
+  span{
+    color: orangered;
+}
+    &:hover {
+      outline-color: #e8e8e8;
+      background: #edf2f6;
+      box-shadow: inset 10px 10px 10px -1px rgb(10, 99, 169, 0.16),
+        inset -10px -10px 10px -1px rgb(255, 255, 255, 0.7);
+    }
+    input {
+      width: 100%;
+      border: none;
+      outline: none;
+      background: transparent;
+      padding: 5px;
+      color: black;
+
+      &::placeholder {
+        font-size: 13px;
+        font-weight: 600;
+        color: rgb(178, 176, 176);
+      }
+    }
+  
+  }
+  .login-btn {
+    font-size: 19px;
+    font-weight: 600;
+    padding: 8px;
+    width: 100px;
+    background: orangered;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    display: block;
+    margin: 5px auto;
+    transition: all 0.3s;
+
+    &:active {
+    transform: scale(1.088);
+    }
+  }
+  .account {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 5px;
+
+    span a {
+      text-decoration: none;
+      color: rgb(54, 124, 255);
+      font-size: 17px;
+      font-weight: 600;
+      font-family: "Times New Roman", Times, serif;
+    }
+  }
+}
+}

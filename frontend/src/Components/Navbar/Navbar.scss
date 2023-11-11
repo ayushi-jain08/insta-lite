@@ -1,0 +1,138 @@
+.navbar {
+  width: 100%;
+  background: white;
+  padding: 12px 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+  .sub-navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .left .logo {
+      display: flex;
+      align-items: center;
+      gap: 3px;
+
+      svg {
+        color: orangered;
+        font-size: 32px;
+      }
+    }
+
+    .center .form-control {
+      display: flex;
+      align-items: center;
+      width: 400px;
+      border: 2px solid rgb(229, 228, 228);
+      border-radius: 20px;
+      height: 30px;
+      
+
+      &:hover{
+        border: 2px solid rgb(251, 187, 164);
+    }
+      input {
+        outline: none;
+        background: whitesmoke;
+        border: none;
+      height: 100%;
+        width: 355px;
+        padding: 0px 9px;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+      
+        &::placeholder{
+          font-weight: 600;
+          color: rgb(190, 188, 188);
+        }
+      }
+      button{
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+          width: 35px;
+          height: 100%;
+          background: orangered;
+          color: white;
+          border: none;
+          outline: none;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+         
+
+          svg {
+            font-size: 25px;
+          }
+      }
+      
+    }
+
+    .right {
+      display: flex;
+      align-items: center;
+      gap: 45px;
+
+
+      .badge{
+        position: relative;
+        display: flex;
+        align-items: center;
+
+        div{
+          display: flex;
+          flex-direction: column;
+          gap: 5px;
+        }
+div{
+  position: absolute;
+  top: 100%;
+  left: -100%;
+  width: 125px;
+  padding: 3px 5px;
+  border-radius: 5px;
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(17, 25, 40, 0.75);
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+color: white;
+visibility: hidden;
+span{
+  font-size: 13px;
+}
+
+}
+&:hover div{
+  visibility: visible;
+    }
+
+        p{
+          position: absolute;
+          top: -15%;
+         right: -20%;
+         background-color: green;
+         padding: 1px 6px;
+         border-radius:40%;
+         color: white;
+         font-size: 15px;
+        }
+      }
+      a.active svg{
+        font-size: 25px;
+        color: orangered;
+        background: rgb(211, 210, 210);
+        border-radius: 50%;
+        padding: 5px;
+      }
+      svg {
+        color: orangered;
+        font-size: 28px;
+      }
+      a svg:hover{
+        color: orangered;
+        transform: scale(1.2);
+      }
+    }
+  }
+}

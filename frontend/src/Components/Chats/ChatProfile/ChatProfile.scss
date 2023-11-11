@@ -1,0 +1,166 @@
+.chat-profile {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 650px;
+  background: rgba(122, 122, 132, 0.2);
+  z-index: 9999;
+
+  .chat-container {
+    float: right;
+    width: 300px;
+    height: 100%;
+    background: white;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    transform: translatex(0%);
+    animation: SlideCartWindow 0.3s ease forwards;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+    &::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: wheat;
+      width: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: orangered;
+      border-radius: 20px;
+      border: 3px solid orange;
+    }
+
+    .top {
+      background-color: orangered;
+      width: 100%;
+      padding: 5px 10px;
+      box-sizing: border-box;
+      color: white;
+      height: 55px;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      span {
+        font-size: 22px;
+        font-family: serif;
+      }
+      .close-dot {
+        border: none;
+        outline: none;
+        background: transparent;
+
+        svg {
+          color: white;
+        }
+      }
+    }
+    .center {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 15px;
+      padding: 10px 15px;
+    //   border: 2px solid black;
+      box-sizing: border-box;
+
+      img {
+        width: 55px;
+        height: 55px;
+        border-radius: 50%;
+       object-fit: cover;
+      }
+      p{
+        text-transform: capitalize;
+        font-size: 17px;
+        font-weight: 700;
+      }
+      span{
+        color: gray;
+        font-size: 15px;
+        font-style: italic;
+      }
+    }
+    .center-bottom{
+      margin-top: 15px;
+
+      .about{
+        max-width: 95%;
+        margin: 0 auto;
+        border-top: 2px solid rgb(190, 185, 185);
+        padding: 5px 15px;
+        box-sizing: border-box;
+        border-bottom: 2px solid rgb(190, 185, 185);
+
+        h2{
+            font-size: 20px;
+            color: rgb(177, 170, 170);
+            padding: 5px 0;
+        }
+        p{
+            padding: 5px;
+            font-size: 16px;
+        }
+      }
+    }
+    .bottom{
+margin-top: 20px;
+padding: 7px;
+display: flex;
+box-sizing: border-box;
+justify-content: space-around;
+align-items: center;
+text-align: center;
+border-top: 2px solid rgb(213, 212, 212);
+border-bottom: 2px solid rgb(213, 212, 212);
+ div{
+    padding: 10px 10px;
+    h3{
+        font-size: 17px;
+    }
+    p{
+        color: rgb(144, 144, 144);
+        font-weight: 600;
+    }
+ }
+
+.middle{
+    border-right:2px solid rgb(213, 212, 212) ;
+    border-left: 2px solid rgb(213, 212, 212);
+    padding: 0 10px;
+}
+    }
+    a{
+        width: 90%;
+        margin: 30px auto;
+        // border: 2px solid black;
+        .go-to-profile{
+            border: none;
+        outline: none;
+        padding: 10px;
+     font-size: 18px;
+     width: 100%;
+     background: orangered;
+     color: white;
+     border-radius: 5px;
+        }
+    }
+  }
+}
+@keyframes SlideCartWindow {
+    0%{
+        transform: translateX(100%);
+
+    }
+     100%{
+        transform: translateX(0%);
+     }
+}

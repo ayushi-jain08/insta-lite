@@ -1,0 +1,76 @@
+.edit-card{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    background: white;
+    width: 100%;
+    height: fit-content;
+    border-radius: 15px;
+    // box-sizing: border-box;
+    padding: 15px 10px;
+
+    .info{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        h2{
+            font-size: 25px;
+            font-weight: 600;
+            font-family: serif;
+        }
+        button{
+            border: none;
+            outline: none;
+            background: transparent;
+
+            svg{
+                font-size: 26px;
+                color: orangered;
+            }
+            &:active{
+                transform: scale(1.2);
+            }
+        }
+    }
+    .details{
+        margin-top: 10px;
+
+        p{
+            font-size: 17px;
+            padding: 4px;
+            cursor: pointer;
+        }
+    }
+    button{
+        float: right;
+        margin-top: 12px;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        padding: 7px 10px;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        font-size: 15px;
+        transition: all 0.3s ease-in-out;
+        color: white;
+
+        
+      
+    }
+    .logout{
+        background: orangered;
+        color: white;
+
+        svg{
+            font-size: 17px;
+        }
+        
+       &:active{
+        transform: scale(1.088);
+        background-color: white;
+        border: 1px solid black;
+        color: orangered;
+       }
+    }
+
+}

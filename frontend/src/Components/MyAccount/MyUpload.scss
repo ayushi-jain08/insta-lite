@@ -1,0 +1,86 @@
+.myupload{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    background: white;
+    width: 98%;
+  min-height: 120px;
+    border-radius: 15px;
+    display: flex;
+    align-items: flex-start;
+    padding: 10px;
+    box-sizing: border-box;
+ display: flex;
+overflow-x: hidden;
+ overflow: hidden;
+
+    img{
+        width: 55px;
+        height: 50px;
+        border-radius: 50%;
+        object-fit: cover;
+   overflow: hidden;
+    }
+
+
+.right{
+    width: 100%;
+     input{
+        border: none;
+        outline: none;
+        width: 90%;
+        background: rgb(239, 238, 238);
+        border-radius: 5px;
+        padding: 8px;
+        align-items: center;
+        border: 2px solid transparent;
+        overflow: hidden;
+
+        &::placeholder{
+            font-size: 15px;
+            color: rgb(149, 148, 148);
+            font-weight: 600;
+        }
+
+        &:focus{
+            border: 2px solid rgb(255, 166, 134);
+        }
+     }
+
+     .icons{
+        width: 100%;
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+     justify-content: space-between;
+  
+        .sub-icons{
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            span{
+                display: flex;
+                align-items: center;
+
+                svg{
+                    padding: 5px;
+                    font-size: 32px;
+                }
+            }
+            
+        }
+
+       .share{
+        padding: 6px;
+        background-color: orangered;
+        border: none;
+        outline: none;
+        width: 70px;
+        font-size: 15px;
+        border-radius: 10px;
+        color: white;
+        margin-right: 20px;
+       }
+     }
+}
+
+ 
+}
